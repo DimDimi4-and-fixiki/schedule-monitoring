@@ -24,6 +24,13 @@ LOG_LEVEL: str = env_reader.str(
     default='DEBUG' if ENV.is_local() else 'INFO',
 )
 
+# Selenium browser
+HIDE_SELENIUM_BROWSER: bool = env_reader.bool('HIDE_SELENIUM_BROWSER', False)
+SELENIUM_REMOTE_DEBUGGING_PORT: int = env_reader.int('SELENIUM_REMOTE_DEBUGGING_PORT', 9222)
+
+# Delay for Selenium actions
+MOS_RU_LOGIN_FORM_FILL_DELAY: int = env_reader.int('LOGIN_FORM_FILL_DELAY', 3)
+
 # Mos.ru credentials
 MOS_RU_URL: str = env_reader.str('MOS_RU_URL', 'https://www.mos.ru/')
 MOS_RU_LOGIN: str = env_reader.str('MOS_RU_LOGIN', '')

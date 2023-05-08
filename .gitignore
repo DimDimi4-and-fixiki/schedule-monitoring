@@ -1,4 +1,4 @@
-browser_drivers/
+browsers_drivers/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
